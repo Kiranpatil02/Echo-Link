@@ -47,6 +47,7 @@ export default function Body() {
           </div>
         </div>
         <div>
+            <h2 className="font-inter text-3xl italic font-semibold mx-auto w-fit">Speech to Sign Converter</h2>
             <div className="border flex items-center justify-center gap-8 p-2">
                 <div>
                     <img src={Leader} alt="" />

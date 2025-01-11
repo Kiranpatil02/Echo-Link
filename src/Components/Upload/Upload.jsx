@@ -2,33 +2,10 @@ import React from "react";
 import deaf from "../../assets/deaf.png";
 import line from "../../assets/line.svg"
 import group from "../../assets/group.svg"
-import { useState,useCallback } from "react";
-import { Link } from "react-router-dom";
+import ASL from "../../assets/ASL_TO_SPEECH_CODESPRINT.MP4"
 
 export default function Upload() {
-    // const [dragActive, setDragActive] = useState(false);
-    // const handleDrag = useCallback((e) => {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     if (e.type === "dragenter" || e.type === "dragover") {
-    //       setDragActive(true);
-    //     } else if (e.type === "dragleave") {
-    //       setDragActive(false);
-    //     }
-    //   }, []);
 
-    //   const handleDrop = useCallback((e) => {
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     setDragActive(false);
-        
-    //     const uploadedFiles = [...e.dataTransfer.files];
-    //     const fontFiles = uploadedFiles.filter(file => 
-    //       file.name.match(/\.(ttf|otf|eot|woff|woff2)$/i)
-    //     );
-        
-    //     setFiles(prevFiles => [...prevFiles, ...f`ontFiles]);
-    //   }, []);
       
   return (
     <>
@@ -48,16 +25,9 @@ export default function Upload() {
         <div>
             <h2 className="mx-auto w-fit text-3xl font-semibold">Connect by Uploading the Video</h2>
         </div>
-        <div className=" ">
-            <div className="border-2 border-dashed  w-2/5 mx-auto flex flex-col p-10">
-            <div className="border flex flex-col items-center">
+        <div className="border-2 bg-gray-200 mt-3 p-3">
 
-                <p className="text-xl font-bold">Drop your Video</p>
-                <input type="file" accept=".mp4" className="" />
-            </div>
-                
-            </div>
-
+        <video className="h-72 mt-4 mx-auto" src={ASL} controls></video>
         </div>
        
       </div>

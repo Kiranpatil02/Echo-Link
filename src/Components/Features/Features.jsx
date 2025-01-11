@@ -16,11 +16,8 @@ export default function Features(){
               </svg>
             </div>
             <h2 className="text-3xl font-bold mb-4">
-              Improve your coding knowledge today.
+              Enabling a Common Tounge to All
             </h2>
-            <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur. Suspendisse suspendisse tempor et ipsum sit egestas nunc. Diam in cum a in.
-            </p>
           </div>
         </div>
 
