@@ -6,6 +6,7 @@ import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 import Upload from './Components/Upload/Upload.jsx'
 import Body from './Components/Body/Body.jsx'
 import Features from './Components/Features/Features.jsx'
+import Speech2Sign from './Components/Speech2Sign/Speech2Sign.jsx'
 
 const router=createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router=createBrowserRouter([
       {
         path:"/features",
         element:<Features/>
+      },
+      {
+        path:"/speech2sign",
+        element:<Speech2Sign/>
       }
     ]
   },
