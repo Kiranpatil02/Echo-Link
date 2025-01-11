@@ -8,11 +8,29 @@
  - Converts Speech to Sign Language representing corresponding images
  - The User can give context before, what are they trying to convey.
 
+## 📚 Project Tech Stack
+
+- **Azure**: Cloud hosting, storage, and deployment.  
+- **React**: Frontend framework for building UI.  
+- **JavaScript**: Core language for frontend logic.  
+- **Python**: Backend development and server-side logic.  
+
+
  ## Work-flow of the App🎯
  ![alt text](image-1.png)
 
+### For Sign Language to Speech Conversion:
  - **MediaPipe** - For 🤚Hand LandMark Anotations
  - **SignLanguage Matrix** - Getting Markings for the true values of Language
- - **OpenAi (GPT4o)** - For giving context and passing corresponding characters
- - **Whisper Model** - Converts all the LLM context into Speech🔊
+ - **Azure OpenAi (GPT4o)** - For giving context and passing corresponding characters
+ - **Azure Speech Service** - Converts all the LLM context into Speech🔊
+
+### For Speech to Sign Language Conversion:
+ - **SpeechRecognition Library** - For converting the speech into text
+ - **Mapping** - Mapping of text to sign language
+ - **Azure Blob Storage** - For storing the data
+ - **Azure App Service** - For deploying the server(backend)
+ - **Vercel** - Frontend hosting and deployment platform
+
+
  
